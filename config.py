@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "<b>○ SOURCE CODE : <a href='https://t.me/+NeqCUg-QDxo2Nzll'>Make your own bot</a>\n DON'T SEND ME DIRECT YOUR MASSAGES ONLY OWNER AND ADMIN CAN Make Links "
+USER_REPLY_TEXT = "<b>○ SOURCE CODE : <a href='https://t.me/+NeqCUg-QDxo2Nzll'>Make your own bot</a>\n DON'T SEND ME DIRECT YOUR MASSAGES ONLY OWNER AND ADMIN CAN Make Links /n 👨‍💻 Devloper : @ifeelscam"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
