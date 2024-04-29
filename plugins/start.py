@@ -88,7 +88,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [          
                 [
-                    InlineKeyboardButton( "Main Channel", url = "https://t.me/MRLINKBACKUP" ),
+                    InlineKeyboardButton( "Main Channel", url = "t.me/Tamil_Aime_Files" ),
                     InlineKeyboardButton("Source Code", url = "https://t.me/+nrNgQ7sT3XQxZTc1")
                 ], [ InlineKeyboardButton("Bot Update", url = "https://t.me/Publicfille") ],
                 [
@@ -125,9 +125,10 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [ 
-        [
-            InlineKeyboardButton(text="Join Channel", url=client.invitelink),
-            InlineKeyboardButton(text="Join Channel", url="https://t.me/MRLINKBACKUP"),
+        [ InlineKeyboardButton(text="Join Channel", url="https://t.me/Publicfille"),
+        ],
+            InlineKeyboardButton(text="Join Channel", url="t.me/Tamil_Aime_Files"),
+            InlineKeyboardButton(text="Join Channel", url=client.invitelink)
         ]
     ]
     try:
