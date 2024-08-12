@@ -75,8 +75,22 @@ async def start_command(client: Client, message: Message):
             else:
                 reply_markup = None
 
+            button_text = "🍃 Back-UP Channel 🍃"
+            button_url = "https://t.me/InkaLinks"
+            reply_markup = InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton(text=button_text, url=button_url)]
+                ]
+            )
+
             try:
-                await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
+                await msg.copy(
+                    chat_id=message.from_user.id,
+                    caption=caption,
+                    parse_mode=ParseMode.HTML,
+                    reply_markup=reply_markup,  # Add inline keyboard
+                    protect_content=PROTECT_CONTENT,
+                )
                 await asyncio.sleep(0.5)
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -94,7 +108,7 @@ async def start_command(client: Client, message: Message):
                     InlineKeyboardButton(text="🎭", callback_data="about"),
                 ],[ InlineKeyboardButton( "ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", callback_data = "main" ),
                     InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", callback_data = "source")
-                ], [ InlineKeyboardButton("ᴡᴀᴛᴄʜ 18+ sʜᴏʀᴛs ᴠɪᴅᴇᴏs", url = "http://t.me/UnseenRobot/shorts") ],
+                ], [ InlineKeyboardButton("ᴡᴀᴛᴄʜ sʜᴏʀᴛs ᴠɪᴅᴇᴏs", url = "http://t.me/UnseenRobot/shorts") ],
                 [
                     InlineKeyboardButton("ʜᴇʟᴘ", callback_data = "help"),
                     InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data = "about")
