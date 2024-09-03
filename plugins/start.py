@@ -71,17 +71,21 @@ async def start_command(client: Client, message: Message):
                 caption = "" if not msg.caption else msg.caption.html
 
             if DISABLE_CHANNEL_BUTTON:
-                reply_markup = msg.reply_markup
-            else:
-                reply_markup = None
+    reply_markup = msg.reply_markup
+else:
+    reply_markup = None
 
-            button_text = "🍃 Back-UP Channel 🍃"
-            button_url = "https://t.me/InkaLinks"
-            reply_markup = InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton(text=button_text, url=button_url)]
-                ]
-            )
+button1_text = "🍃 Back-UP Channel 🍃"
+button1_url = "https://t.me/InkaLinks"
+button2_text = "📂 Mega Links 📂 "
+button2_url = "https://t.me/+UIWJAwyynqQ1NTBk"
+
+reply_markup = InlineKeyboardMarkup(
+    [
+        [InlineKeyboardButton(text=button1_text, url=button1_url),
+    InlineKeyboardButton(text=button2_text, url=button2_url)]
+    ]
+)
 
             try:
                 await msg.copy(
