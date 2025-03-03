@@ -5,9 +5,13 @@
 
 Telegram Bot to store Posts and Documents and it can Access by Special Links.
 I Guess This Will Be Usefull For Many People.....😇. 
+
+
+
+
 <details>
-<summary>More </summary>
-##
+###<summary><b>More</b></summary>
+
 
 **If you need any more modes in repo or If you find out any bugs, mention in [@PythonBotz](https://www.telegram.dog/pythonbotz)**
 
@@ -46,6 +50,7 @@ pip3 install -r requirements.txt
 python3 main.py
 ````
 </details>
+
 ### Admin Commands
 
 ```
