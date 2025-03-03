@@ -75,11 +75,12 @@ async def start_command(client: Client, message: Message):
             else:
                 reply_markup = None
 
-            button_text = "🍃 Back-UP Channel 🍃"
-            button_url = "https://t.me/InkaLinks"
+            button_text = "Update"
+            button_url = "https://t.me/Pythonbotz"
             reply_markup = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text=button_text, url=button_url)]
+                    [InlineKeyboardButton(text=button_text, url=button_url),
+                    InlineKeyboardButton("Support", url = "t.me/offchats")]
                 ]
             )
 
@@ -147,7 +148,7 @@ async def not_joined(client: Client, message: Message):
         [
            InlineKeyboardButton(
                 "Join Channel",
-                url = "https://t.me/+ZlNc8ywEijNjZTQ1"),
+                url = "https://t.me/Pythonbotz"),
             InlineKeyboardButton(
                 "Join Channel",
                 url = client.invitelink)
