@@ -1,4 +1,4 @@
-━━━━━━━━━━━━━━━━━━━━
+
 
 <h2 align="center">
     ──「 ғɪʟᴇ sᴛᴏʀᴇ ᴘʀᴏ 」──
@@ -66,7 +66,9 @@ python3 main.py
 
 /stats - checking your bot uptime
 ```
-
+<details>
+<summary><b><blockquote>Explore Variables Set-up</blockquote></b></summary> 
+    
 ### Variables
 
 * `API_HASH` Your API Hash from my.telegram.org
@@ -81,9 +83,8 @@ python3 main.py
 * `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
 * `FORCE_SUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
 * `PROTECT_CONTENT` Optional: True if you need to prevent files from forwarding
-<details>
-<summary>Extra Variables</summary> 
 
+### EXTRA VARIABLES
 * `CUSTOM_CAPTION` put your Custom caption text if you want Setup Custom Caption, you can use HTML and <a href='https://github.com/otterai/file-share-v2/blob/main/README.md#custom_caption'>fillings</a> for formatting (only for documents)
 * `DISABLE_CHANNEL_BUTTON` Put True to Disable Channel Share Button, Default if False
 * `BOT_STATS_TEXT` put your custom text for stats command, use HTML and <a href='https://github.com/otterai/file-share-v2/blob/main/README.md#custom_stats'>fillings</a>
