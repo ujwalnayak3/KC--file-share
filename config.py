@@ -48,6 +48,11 @@ except ValueError:
 #Force sub message 
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You need to join in my Channel to use me\n\nKindly Please join Channel</b>")
 
+# Start & Fsub Pics ----------------------------------- #
+START_PIC = os.environ.get("START_PIC", "https://envs.sh/arr.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/EM8.jpg")
+# Start & Fsub Pics ----------------------------------- #
+
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
