@@ -1,16 +1,16 @@
 
 
 <h2 align="center">
-    ──「 ғɪʟᴇ sᴛᴏʀᴇ ᴘʀᴏ 」──
+    ──「 ғɪʟᴇ sʜᴀʀᴇ ᴠ𝟸 」──
 </h2>
-
+<table>
 <p align="center">
-  <img align="center" alt="count" src=https://github.com/otterai/otterai/blob/main/asuka.gif>
-</p>
-
-
+  <img align="centre" alt="count" src=https://github.com/otterai/otterai/blob/main/asuka.gif>
+<img align="middle" alt="count" src="https://count.getloli.com/get/@:otterai?theme=rule34">
+    
+</table>
 <details>
-###<summary><b>More</b></summary>
+###<summary><b><i>🦄 More Information</i></b></summary>
 
 
 **If you need any more modes in repo or If you find out any bugs, mention in [@PythonBotz](https://www.telegram.dog/pythonbotz)**
