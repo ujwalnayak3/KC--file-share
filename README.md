@@ -1,12 +1,12 @@
-# File-sharing-Bot
+━━━━━━━━━━━━━━━━━━━━
 
+<h2 align="center">
+    ──「 ғɪʟᴇ sᴛᴏʀᴇ ᴘʀᴏ 」──
+</h2>
 
-
-
-Telegram Bot to store Posts and Documents and it can Access by Special Links.
-I Guess This Will Be Usefull For Many People.....😇. 
-
-
+<p align="center">
+  <img align="center" alt="count" src=https://github.com/otterai/otterai/blob/main/asuka.gif>
+</p>
 
 
 <details>
