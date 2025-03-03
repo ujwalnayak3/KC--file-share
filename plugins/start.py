@@ -128,9 +128,9 @@ async def start_command(client: Client, message: Message):
             ),
             reply_markup = reply_markup,
             has_spoiler = True,
-            message_effect_id = 5104841245755180586, # 🔥
-            disable_web_page_preview = True,
-            quote = True
+            # 🔥
+            disable_web_page_preview = True
+            
         )
         return
 
