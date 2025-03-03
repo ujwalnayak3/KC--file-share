@@ -5,7 +5,8 @@
 
 Telegram Bot to store Posts and Documents and it can Access by Special Links.
 I Guess This Will Be Usefull For Many People.....😇. 
-
+<details>
+<summary>More </summary>
 ##
 
 **If you need any more modes in repo or If you find out any bugs, mention in [@PythonBotz](https://www.telegram.dog/pythonbotz)**
@@ -44,7 +45,7 @@ pip3 install -r requirements.txt
 # <Create config.py appropriately>
 python3 main.py
 ````
-
+</details>
 ### Admin Commands
 
 ```
@@ -75,8 +76,8 @@ python3 main.py
 * `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
 * `FORCE_SUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
 * `PROTECT_CONTENT` Optional: True if you need to prevent files from forwarding
-
-### Extra Variables
+<details>
+<summary>Extra Variables</summary> 
 
 * `CUSTOM_CAPTION` put your Custom caption text if you want Setup Custom Caption, you can use HTML and <a href='https://github.com/otterai/file-share-v2/blob/main/README.md#custom_caption'>fillings</a> for formatting (only for documents)
 * `DISABLE_CHANNEL_BUTTON` Put True to Disable Channel Share Button, Default if False
@@ -102,7 +103,7 @@ python3 main.py
 
 * `{uptime}` - Bot Uptime
 
-
+</details>
 ### Credits
 
 - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
