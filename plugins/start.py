@@ -1,10 +1,14 @@
-#(©)CodeXBotz
+#(©) PythonBotz 
 
 
 
 import sys
 import os
 import asyncio
+import time
+import random
+import string
+import string as rohit
 from pyrogram import Client, filters, __version__
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
@@ -74,7 +78,7 @@ async def start_command(client: Client, message: Message):
                 reply_markup = msg.reply_markup
             else:
                 reply_markup = None
-
+# Button ✅ in upcoming post ####################################
             button_text = "Update"
             button_url = "https://t.me/Pythonbotz"
             reply_markup = InlineKeyboardMarkup(
@@ -145,42 +149,72 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 
     
     
+# Don't Remove Credit @rohit_1888 
+# Ask Doubt on telegram @offchats
+
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    buttons = [ 
-        [
-           InlineKeyboardButton(
-                "Join Channel",
-                url = "https://t.me/Pythonbotz"),
-            InlineKeyboardButton(
-                "Join Channel",
-                url = client.invitelink)
-        ]
-    ]
+    # Initialize buttons list
+    buttons = []
+
+    # Check if the first and second channels are both set
+    if FORCE_SUB_CHANNEL1 and FORCE_SUB_CHANNEL2:
+        buttons.append([
+            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink1),
+            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink2),
+        ])
+    # Check if only the first channel is set
+    elif FORCE_SUB_CHANNEL1:
+        buttons.append([
+            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ•", url=client.invitelink1)
+        ])
+    # Check if only the second channel is set
+    elif FORCE_SUB_CHANNEL2:
+        buttons.append([
+            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ•", url=client.invitelink2)
+        ])
+
+    # Check if the third and fourth channels are set
+    if FORCE_SUB_CHANNEL3 and FORCE_SUB_CHANNEL4:
+        buttons.append([
+            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink3),
+            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink4),
+        ])
+    # Check if only the first channel is set
+    elif FORCE_SUB_CHANNEL3:
+        buttons.append([
+            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ•", url=client.invitelink3)
+        ])
+    # Check if only the second channel is set
+    elif FORCE_SUB_CHANNEL4:
+        buttons.append([
+            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ•", url=client.invitelink4)
+        ])
+
+    # Append "Try Again" button if the command has a second argument
     try:
-        buttons.append(
-            [
-                InlineKeyboardButton(
-                    text = '♻️ Try Again ♻️',
-                    url = f"https://t.me/{client.username}?start={message.command[1]}"
-                )
-            ]
-        )
+        buttons.append([
+            InlineKeyboardButton(
+                text="♻️ ʀᴇʟᴏᴀᴅ ♻️",
+                url=f"https://t.me/{client.username}?start={message.command[1]}"
+            )
+        ])
     except IndexError:
-        pass
+        pass  # Ignore if no second argument is present
 
     await message.reply_photo(
         photo=FORCE_PIC,
         caption=FORCE_MSG.format(
-                first = message.from_user.first_name,
-                last = message.from_user.last_name,
-                username = None if not message.from_user.username else '@' + message.from_user.username,
-                mention = message.from_user.mention,
-                id = message.from_user.id
-            ),
-        reply_markup = InlineKeyboardMarkup(buttons)
-    
+        first=message.from_user.first_name,
+        last=message.from_user.last_name,
+        username=None if not message.from_user.username else '@' + message.from_user.username,
+        mention=message.from_user.mention,
+        id=message.from_user.id
+    ),
+    reply_markup=InlineKeyboardMarkup(buttons)#,
+    #message_effect_id=5104841245755180586  # Add the effect ID here
     )
+    
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
