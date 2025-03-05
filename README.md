@@ -5,7 +5,7 @@
 </h2>
 <table>
 <p align="center">
-  <img align="centre" alt="count" src=https://github.com/otterai/otterai/blob/main/asuka.gif>
+  <img align="centre" alt="count" src=https://github.com/otterai/otterai/blob/main/pinterestdownloader.com-1741205116.621408.gif>
 <img align="middle" alt="count" src="https://count.getloli.com/get/@:otterai?theme=rule34">
     
 </table>
