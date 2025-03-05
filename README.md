@@ -115,7 +115,7 @@ python3 main.py
 # All Thanks To Our Contributors
 
 <a href="https://github.com/otterai/file-share-v2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=otterai/TGmeta" />
+  <img src="https://contrib.rocks/image?repo=otterai/file-share-v2" />
 </a>
 
 ### Licence
