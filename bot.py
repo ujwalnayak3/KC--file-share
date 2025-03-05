@@ -110,7 +110,7 @@ class Bot(Client):
         self.username = usr_bot_me.username
         self.LOGGER(__name__).info(f"Bot Running..! Made by @PythonBotz")   
 
-        # Start Web Server
+                # Start Web Server
         app = web.AppRunner(await web_server())
         await app.setup()
         await web.TCPSite(app, "0.0.0.0", PORT).start()
@@ -127,12 +127,10 @@ class Bot(Client):
         """Run the bot."""
         loop = asyncio.get_event_loop()
         loop.run_until_complete(self.start())
-        self.LOGGER(__name__).info("Bot is now running. Thanks to @Pythonbotz")
+        self.LOGGER(__name__).info("Bot is now running. Thanks to @PythonBotz")
         try:
             loop.run_forever()
         except KeyboardInterrupt:
             self.LOGGER(__name__).info("Shutting down...")
         finally:
             loop.run_until_complete(self.stop())
-
-     
