@@ -110,10 +110,13 @@ python3 main.py
 * `{uptime}` - Bot Uptime
 
 </details>
-### Credits
 
-- Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
-- Our Support Group Members
+
+# All Thanks To Our Contributors
+
+<a href="https://github.com/otterai/file-share-v2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=otterai/TGmeta" />
+</a>
 
 ### Licence
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
