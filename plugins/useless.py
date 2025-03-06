@@ -18,13 +18,12 @@ async def info(client: Bot, message: Message):
     
     # Calculate ping time in milliseconds
     ping_time = (end_time - start_time) * 1000
-    
-    users = await full_userbase()
+   
     now = datetime.now()
     delta = now - bot.uptime
     bottime = get_readable_time(delta.seconds)
     
-    await temp_msg.edit(f"🫂 : <b>{len(users)} USERS\n\n🚀 UPTIME » {uptime}\n\n📡 PING » {ping_time:.2f} ms\n\n<u>👨‍💻 Developer : @PythonBotz</u></b>", reply_markup = reply_markup,)
+    await temp_msg.edit(f" <b>🚀 UPTIME » {uptime}\n\n📡 PING » {ping_time:.2f} ms\n\n<u>👨‍💻 Developer : @PythonBotz</u></b>", reply_markup = reply_markup,)
 
 
 
