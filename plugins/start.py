@@ -20,6 +20,8 @@ from helper_func import *
 from database.database import *
 
 
+# File auto-delete time in seconds (Set your desired time in seconds here)
+FILE_AUTO_DELETE = TIME  # Example: 3600 seconds (1 hour)
 
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed1 & subscribed2 & subscribed3 & subscribed4)
@@ -31,7 +33,7 @@ async def start_command(client: Client, message: Message):
         except:
             pass
     
-    # Handle normal message flow
+    # functions 
     text = message.text
     if len(text) > 7:
         try:
@@ -69,23 +71,35 @@ async def start_command(client: Client, message: Message):
         finally:
             await temp_msg.delete()
 
-        codeflix_msgs = []
+        pythonbotz_msgs = []
         for msg in messages:
             caption = (CUSTOM_CAPTION.format(previouscaption="" if not msg.caption else msg.caption.html, 
                                              filename=msg.document.file_name) if bool(CUSTOM_CAPTION) and bool(msg.document)
                        else ("" if not msg.caption else msg.caption.html))
 
-            reply_markup = msg.reply_markup if DISABLE_CHANNEL_BUTTON else None
+         if DISABLE_CHANNEL_BUTTON:
+                reply_markup = msg.reply_markup
+            else:
+                reply_markup = None
+# Button ✅ in upcoming post ####################################
+            button_text = "Update"
+            button_url = "https://t.me/Pythonbotz"
+            reply_markup = InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton(text=button_text, url=button_url),
+                    InlineKeyboardButton("Support", url = "t.me/offchats")]
+                ]
+            )
 
             try:
                 copied_msg = await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML, 
                                             reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
-                codeflix_msgs.append(copied_msg)
+                pythonbotz_msgs.append(copied_msg)
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 copied_msg = await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML, 
                                             reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
-                codeflix_msgs.append(copied_msg)
+                pythonbotz_msgs.append(copied_msg)
             except Exception as e:
                 print(f"Failed to send message: {e}")
                 pass
@@ -97,7 +111,7 @@ async def start_command(client: Client, message: Message):
 
             await asyncio.sleep(FILE_AUTO_DELETE)
 
-            for snt_msg in codeflix_msgs:    
+            for snt_msg in pythonbotz_msgs:    
                 if snt_msg:
                     try:    
                         await snt_msg.delete()  
@@ -132,7 +146,7 @@ async def start_command(client: Client, message: Message):
                     InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", callback_data = "source")
                 ], [ InlineKeyboardButton("ᴡᴀᴛᴄʜ 𝟷𝟾+ sʜᴏʀᴛs ᴠɪᴅᴇᴏs", url = "http://t.me/UnseenRobot/shorts") ],
                 [
-                    InlineKeyboardButton("ᴍᴀɪɴ", callback_data = "about")
+                    InlineKeyboardButton("ᴍᴀɪɴ", callback_data = "about"),
                     InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data = "about")
                 ]
             ]
