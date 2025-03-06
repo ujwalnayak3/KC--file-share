@@ -1,4 +1,4 @@
-#(©)Codexbotz
+#(©) PythonBotz 
 
 import asyncio
 from pyrogram import filters, Client
