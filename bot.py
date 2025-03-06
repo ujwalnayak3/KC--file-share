@@ -113,24 +113,12 @@ class Bot(Client):
                 # Start Web Server
         app = web.AppRunner(await web_server())
         await app.setup()
-        await web.TCPSite(app, "0.0.0.0", PORT).start()
+        bind_address = "0.0.0.0"
+        await web.TCPSite(app, bind_address, PORT).start()
 
-
-        try: await self.send_message(OWNER_ID, text = f"<b><blockquote>🤖 Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ by @PythonBotz</blockquote></b>")
+        try: await self.send_message(OWNER_ID, text = f"<b><blockquote>🤖 Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ ♻️</blockquote></b>")
         except: pass
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Bot stopped.")
-
-    def run(self):
-        """Run the bot."""
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(self.start())
-        self.LOGGER(__name__).info("Bot is now running. Thanks to @PythonBotz")
-        try:
-            loop.run_forever()
-        except KeyboardInterrupt:
-            self.LOGGER(__name__).info("Shutting down...")
-        finally:
-            loop.run_until_complete(self.stop())
+        self.LOGGER(__name__).info(f"{self.name} Bot stopped.")
