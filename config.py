@@ -56,8 +56,10 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʀᴇʟᴏᴀᴅ button ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛᴇᴅ ꜰɪʟᴇ.</b>")
 
 # Start & Fsub Pics ----------------------------------- #
-START_PIC = os.environ.get("START_PIC", "https://envs.sh/arr.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/EM8.jpg")
+
+#Collection of pics for Bot // #Optional but atleast one pic link should be replaced if you don't want predefined links
+PICS = (os.environ.get("PICS", "https://envs.sh/Vx5.jpg https://envs.sh/VxL.jpg https://envs.sh/Vxc.jpg https://envs.sh/V8O.jpg https://envs.sh/V8m.jpg https://envs.sh/V8X.jpg https://envs.sh/V8y.jpg")).split() #Required
+
 # Start & Fsub Pics ----------------------------------- #
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
