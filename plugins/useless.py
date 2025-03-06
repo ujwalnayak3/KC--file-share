@@ -5,7 +5,7 @@ from config import ADMINS, BOT_STATS_TEXT, USER_REPLY_TEXT
 from datetime import datetime
 from helper_func import get_readable_time
 
-@Bot.on_message(filters.command('status') & filters.private & is_admin)
+@Bot.on_message(filters.command('stats') & filters.user(ADMINS))
 async def info(client: Bot, message: Message):   
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("★ Cʟᴏsᴇ ★", callback_data = "close")]])
     
