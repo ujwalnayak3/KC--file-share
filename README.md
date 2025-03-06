@@ -65,6 +65,8 @@ python3 main.py
 /broadcast - broadcast any messages to bot users
 
 /stats - checking your bot uptime
+
+/restart - Restart your bot uptime 
 ```
 <details>
 <summary><b><blockquote>Explore Variables Set-up</blockquote></b></summary> 
