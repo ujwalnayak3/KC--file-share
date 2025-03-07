@@ -9,21 +9,11 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from helper_func import get_readable_time
 
 @Bot.on_message(filters.command('stats') & filters.user(ADMINS))
-async def info(client: Bot, message: Message):   
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("★ Cʟᴏsᴇ ★", callback_data = "close")]])
-    
-    
-    temp_msg = await message.reply("<b><i>Pʀᴏᴄᴇssɪɴɢ....</i></b>", quote=True)  # Temporary message
-    
-    
-    
-   
+async def stats(bot: Bot, message: Message):
     now = datetime.now()
     delta = now - bot.uptime
     time = get_readable_time(delta.seconds)
-    await temp_msg.edit(f" <b>🚀 UPTIME » {time}\n\n<u>👨‍💻 Developer : @PythonBotz</u></b>", reply_markup = reply_markup,)
-
-
+    await message.reply(BOT_STATS_TEXT.format(uptime=time))
 
 @Bot.on_message(filters.private & filters.incoming)
 async def useless(_,message: Message):
