@@ -21,9 +21,8 @@ async def info(client: Bot, message: Message):
    
     now = datetime.now()
     delta = now - bot.uptime
-    bottime = get_readable_time(delta.seconds)
-    
-    await temp_msg.edit(f" <b>🚀 UPTIME » {uptime}\n\n📡 PING » {ping_time:.2f} ms\n\n<u>👨‍💻 Developer : @PythonBotz</u></b>", reply_markup = reply_markup,)
+    time = get_readable_time(delta.seconds)
+    await temp_msg.edit(f" <b>🚀 UPTIME » {time}\n\n📡 PING » {ping_time:.2f} ms\n\n<u>👨‍💻 Developer : @PythonBotz</u></b>", reply_markup = reply_markup,)
 
 
 
