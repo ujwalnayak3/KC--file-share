@@ -12,17 +12,16 @@ from helper_func import get_readable_time
 async def info(client: Bot, message: Message):   
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("★ Cʟᴏsᴇ ★", callback_data = "close")]])
     
-    start_time = time.time()
-    temp_msg = await message.reply("<b><i>Pʀᴏᴄᴇssɪɴɢ....</i></b>", quote=True)  # Temporary message
-    end_time = time.time()
     
-    # Calculate ping time in milliseconds
-    ping_time = (end_time - start_time) * 1000
+    temp_msg = await message.reply("<b><i>Pʀᴏᴄᴇssɪɴɢ....</i></b>", quote=True)  # Temporary message
+    
+    
+    
    
     now = datetime.now()
     delta = now - bot.uptime
     time = get_readable_time(delta.seconds)
-    await temp_msg.edit(f" <b>🚀 UPTIME » {time}\n\n📡 PING » {ping_time:.2f} ms\n\n<u>👨‍💻 Developer : @PythonBotz</u></b>", reply_markup = reply_markup,)
+    await temp_msg.edit(f" <b>🚀 UPTIME » {time}\n\n<u>👨‍💻 Developer : @PythonBotz</u></b>", reply_markup = reply_markup,)
 
 
 
