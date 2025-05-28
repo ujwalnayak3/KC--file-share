@@ -58,7 +58,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>ᴊ�
 # Start & Fsub Pics ----------------------------------- #
 
 #Collection of pics for Bot // #Optional but atleast one pic link should be replaced if you don't want predefined links
-PICS = (os.environ.get("PICS", "https://envs.sh/Vx5.jpg https://envs.sh/VxL.jpg https://envs.sh/Vxc.jpg https://envs.sh/V8O.jpg https://envs.sh/V8m.jpg https://envs.sh/V8X.jpg https://envs.sh/V8y.jpg")).split() #Required
+PICS = (os.environ.get("PICS", "")).split() #Required
 
 # Start & Fsub Pics ----------------------------------- #
 
