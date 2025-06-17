@@ -32,7 +32,7 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Kfcinemas:ujwal@cluster0.
 DB_NAME = os.environ.get("DATABASE_NAME", "kcfiles")
 
 #Time in seconds for message Auto delete, put 0 to never delete
-TIME = int(os.environ.get("TIME", "86400"))
+TIME = int(os.environ.get("TIME", "0"))
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1002524025558"))
