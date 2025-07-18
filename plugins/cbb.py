@@ -11,12 +11,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     if data == "about":
         await query.message.edit_text(
             text = f"""<b><blockquote>╭───────────⍟
-├➤ ᴏᴡɴᴇʀ : <a href='t.me/peldiya'>ᴛʜɪs ᴘᴇʀsᴏɴ</a>
+├➤ ᴏᴡɴᴇʀ : <a href='t.me/proud_kannadiga'>ᴛʜɪs ᴘᴇʀsᴏɴ</a>
 ├➤ ʟɪʙʀᴀʀy : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a>
 ├➤ ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org>ᴘʏᴛʜᴏɴ 3</a>
-├➤ ᴍʏ ᴜᴘᴅᴀᴛᴇs : <a href=https://t.me/PythonBotz>ᴏᴜᴛʟᴀᴡ ʙᴏᴛs</a>
+├➤ ᴍʏ ᴜᴘᴅᴀᴛᴇs : <a href=https://t.me/Kannada_Cineflixz>ᴏᴜᴛʟᴀᴡ ʙᴏᴛs</a>
 ├➤ ᴘᴀɪᴅ ʙᴏᴛ : <a href=https://t.me/seiao>ᯓ ɪɴᴠᴀʟɪᴅ ᡣ𐭩</a>
-├➤ ᴅᴇᴠʟᴏᴘᴇʀ : <a href=https://t.me/metaui>ᯓ ʜᴀᴛᴇ ғʀᴇᴇ ᡣ𐭩</a>
+├➤ ᴅᴇᴠʟᴏᴘᴇʀ : <a href=https://t.me/proud_kannadiga>ᯓ ʜᴀᴛᴇ ғʀᴇᴇ ᡣ𐭩</a>
 ╰───────────────⍟</blockquote></b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
