@@ -22,7 +22,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [ [ InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data ="source"),
                   InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ" , callback_data = "main")],
-                 [InlineKeyboardButton("ᴡᴀᴛᴄʜ sʜᴏʀᴛs 𝟷𝟾+ ᴠɪᴅᴇᴏs", url = "https://t.me/UnseenRobot/shorts")],
+                 [InlineKeyboardButton("ᴡᴀᴛᴄʜ sʜᴏʀᴛs 𝟷𝟾+ ᴠɪᴅᴇᴏs", url = "")],
                     [
                         InlineKeyboardButton("🔙 ʙᴀᴄᴋ ", callback_data = "home"),
                         InlineKeyboardButton("🚫 ᴄʟᴏsᴇ ", callback_data = "close")
@@ -46,8 +46,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [   
                     [
-                        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", url="https://t.me/+D-WW53u9rzNhNDJl"),
-                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ",url = "t.me/pythonbotz")
+                        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Kannada_Cineflix"),
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ",url = "https://t.me/Kannada_Cineflix")
                     ],
                     [   InlineKeyboardButton("🔙 ʙᴀᴄᴋ ", callback_data = "home"), 
                         InlineKeyboardButton("🚫 ᴄʟᴏsᴇ ", callback_data = "close")
@@ -74,7 +74,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                     InlineKeyboardButton(text="🎭", callback_data="about"),
                 ],[ InlineKeyboardButton( "ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", callback_data = "main" ),
                     InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", callback_data = "source")
-                ], [ InlineKeyboardButton("ᴡᴀᴛᴄʜ 𝟷𝟾+ sʜᴏʀᴛs ᴠɪᴅᴇᴏs", url = "https://t.me/UnseenRobot/shorts") ],
+                ], [ InlineKeyboardButton("ᴡᴀᴛᴄʜ 𝟷𝟾+ sʜᴏʀᴛs ᴠɪᴅᴇᴏs", url = "") ],
                 [
                     InlineKeyboardButton("🤖 ᴀʙᴏᴜᴛ ᴍᴇ", callback_data = "about"),
                     InlineKeyboardButton("🚫 ᴄʟᴏsᴇ ", callback_data = "close")
@@ -95,8 +95,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 disable_web_page_preview=True,
                 reply_markup = InlineKeyboardMarkup(
                     [
-                        [  InlineKeyboardButton("ᴅᴇᴠʟᴏᴘᴇʀ",url= "t.me/HateXfree"),
-                         InlineKeyboardButton("ᴀᴅᴍɪɴ",url = "t.me/peldiya")],
+                        [  InlineKeyboardButton("ᴅᴇᴠʟᴏᴘᴇʀ",url= "t.me/proud_kannadiga"),
+                         InlineKeyboardButton("ᴀᴅᴍɪɴ",url = "t.me/proud_kannadiga")],
                         [ InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data = "home"),
                          InlineKeyboardButton( "🚫 ᴄʟᴏsᴇ", callback_data = "close")]
                     ]
@@ -110,8 +110,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [   
                     [
-                        InlineKeyboardButton("ɢɪᴛʜᴜʙ ", url="https://github.com/otterai/file-share-v2"),
-                        InlineKeyboardButton("ᴢɪᴘ ғɪʟᴇ",url="https://t.me/+Yy9O2e_eJwU3NjRl")
+                        InlineKeyboardButton("ɢɪᴛʜᴜʙ ", url="https://t.me/Kannada_Cineflix"),
+                        InlineKeyboardButton("ᴢɪᴘ ғɪʟᴇ",url="https://t.me/Kannada_Cineflix")
                     ],
                     [   InlineKeyboardButton("🔙 ʙᴀᴄᴋ" , callback_data = "home"),
                         InlineKeyboardButton("🚫 ᴄʟᴏsᴇ ", callback_data = "close")
